@@ -1,0 +1,104 @@
+*:before, *:after, *{
+	margin: 0; padding: 0; box-sizing: border-box;
+}
+body{
+/*	background: #ff253a;*/
+}
+#popBox{
+/*	display: none;*/
+}
+.popBox{
+	left: 0; top: 0;
+	width: 100%; height: 100%;
+	position: fixed;
+	float: auto;
+	background: rgba(90, 70, 70, 0.5);
+	z-index: 99992;
+}
+.popBox:hover{
+	background: rgba(95, 95, 95, 0.4);
+}
+.popBox .pop-nav{
+	position: absolute;
+/*	background: #a2f;*/
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+}
+button {
+  background-color: rgba(0, 255, 0, 0.0);
+  color: #BF973F;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+.cont-btn{
+	background: #acf;
+	height: 	50px;
+	width: 40px;
+	cursor: pointer;
+}
+.btn:hover, .zoom:hover{
+	background: rgba(200, 200, 200, 1.0);
+	color: #000;
+}
+.btn{
+	position: absolute;
+	height: 40px; width: 40px;
+	padding: 0; font-size: 40px;
+}
+.pop-nav .close-btn{
+	top: 20px; right: 50px;
+/*	font-size: 40px;*/
+width: 45px !important;
+	padding: 0;
+}
+.pop-nav .prev-btn{
+	left: 12%; top: 50%;
+/*	font-size: 40px;*/
+}
+.pop-nav .next-btn{
+	right: 12%; top: 50%;
+}
+.pop-nav .zoom-cont{
+	position: absolute;
+	left: 30%; top: 80%;
+	justify-content: space-between;
+/*	background: #acf;*/
+	width: 40%;
+	display: flex;
+/*	align-items: center;*/
+	justify-content: space-between;
+}
+.pop-nav .zoom-cont .zoom{
+/*	background: rgba(255, 255, 255, 0.1);*/
+/*	color: #000;*/
+	font-size: 50px;
+}
+.popBox .pop-img{
+	width: 100%; height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 95;
+/*	background: #c2c;*/
+}
+.popBox .pop-img .img-prop{
+	text-align: center;
+}
+.popBox .pop-img img{
+	width: 700px; height: 450px;
+	border: 5px solid #BF973F;
+}
+.test{
+	cursor: pointer
+}
+.tbox{
+/*	display: none;*/
+	position: absolute;
+	width: 400px; height: 400px;
+	background: #acf;
+	;
+}
